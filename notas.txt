@@ -1,0 +1,15 @@
+- Instalar de forma global TypeScript con la opción -g (en mi caso lo haré sólo localmente):
+
+  npm install -g typescript  (para hacerlo local le quitamos el -g).
+
+- Para transpilar, es decir, pasar de TypeScript a JavaScript tenemos dos opciones:
+
+  tsc fichero.ts -> Nos genera el fichero js correspondiente
+  tsc -w -> Activa el "watcher" y cuando realicemos cambios irá generando la transpilación automáticamente
+      (en mi caso, como lo he instalado localmente sería node_modules\.bin\tsc -w)
+
+- Lo suyo sería que el código lo ejecutáramos desde una página web, pero podemos hacerlo con node, que nos 
+  proporciona un entorno de ejecución javascript: https://nodejs.org/es/
+
+  node main.js  (tiene que ser desde el js porque node no entiende de tipos).
+  

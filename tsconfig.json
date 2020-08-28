@@ -1,0 +1,17 @@
+// Configuración mínima del tsconfig.json:
+//
+//- target: indicamos que queremos que compile a código Javascript escrito 
+//   con el estándar ES5, que es el que todos los navegadores comprenden, incluso los
+//   Internet Explorer más antiguos.
+//
+//- outDir: indicamos el directorio donde se van a colocar los archivos Javascript, ".js", 
+//   una vez transpilados.
+//- rootDir: indica dónde están los archivos fuente, con el código TypeScript, ".ts", 
+//   que debe ser traducido.
+{
+  "compilerOptions": {
+    "target": "es5",
+    "outDir": "dist",
+    "rootDir": "src"
+  }
+}
